@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button class=" btn btn-success">Click Me</button>
+    <button class=" btn btn-secondary">Click Me</button>
+    <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+<label class="swap swap-flip text-9xl">
+    <!-- this hidden checkbox controls the state -->
+    <input type="checkbox" />
+  
+    <div class="swap-on">😈</div>
+    <div class="swap-off">😇</div>
+  </label>
+
+  <div class="collapse collapse-plus bg-base-200">
+    <input type="radio" name="my-accordion-3" checked="checked" />
+    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+    <div class="collapse-content">
+      <p>hello</p>
+    </div>
+  </div>
+  <div class="collapse collapse-plus bg-base-200">
+    <input type="radio" name="my-accordion-3" />
+    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+    <div class="collapse-content">
+      <p>hello</p>
+    </div>
+  </div>
+  <div class="collapse collapse-plus bg-base-200">
+    <input type="radio" name="my-accordion-3" />
+    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+    <div class="collapse-content">
+      <p>hello</p>
+    </div>
+  </div>
+  <div class="avatar">
+    <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+      <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+    </div>
+  </div>
+  <div class="badge badge-info gap-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="inline-block h-4 w-4 stroke-current">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+    info
+  </div>
+  <div class="badge badge-success gap-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="inline-block h-4 w-4 stroke-current">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+    success
+  </div>
+  <div class="badge badge-warning gap-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="inline-block h-4 w-4 stroke-current">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+    warning
+  </div>
+  <div class="badge badge-error gap-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="inline-block h-4 w-4 stroke-current">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+    error
+  </div>
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        alt="Shoes"
+        class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

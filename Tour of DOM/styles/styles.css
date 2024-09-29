@@ -1,0 +1,28 @@
+h1{
+    color:aqua;
+
+}
+ul{
+
+    list-style-type:none;
+    
+}
+ul>li{
+    color:red;
+    /* text-align: center; */
+    /* justify-content: center; */
+    align-items: center;
+    justify-items: center;
+}
+
+main>section{
+    margin: o auto;
+}
+
+.yellow-bg{
+    background-color: pink  !important;
+}
+
+.text-large{
+    font-size: 90px;
+}

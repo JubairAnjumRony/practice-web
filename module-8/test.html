@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .row > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .row {
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 40px;
+        }
+        
+        .row > div {
+            flex: 1;
+        }
+        
+        .vertical-images img {
+            height: calc((100% - 5px) / 2);
+            object-fit: cover;
+            display: block;
+            width: 100%;
+        }
+        
+        .square-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            height: 100%;
+        }
+        
+        .square-images img {
+            width: 100%;
+            height: calc((100% - 5px) / 2);
+            object-fit: cover;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="my-college">
+        <div class="row">
+            <img src="./images/img1 (1).jpg">
+        </div>
+        <div class="row">
+            <div>
+                <img src="./images/img1 (1).jpeg">
+            </div>
+            <div>
+                <img src="./images/img1 (2).jpeg">
+            </div>
+            <div class="vertical-images">
+                <img src="./images/img1 (3).jpeg">
+                <img src="./images/img1 (4).jpeg">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="./images/img1 (5).jpeg">
+            </div>
+            <div class="square-images">
+                <img src="./images/img1 (6).jpeg">
+                <img src="./images/img1 (7).jpeg">
+                <img src="./images/img1 (8).jpeg">
+                <img src="./images/img1 (9).jpeg">
+            </div>
+            <div>
+                <img src="./images/img1 (10).jpeg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

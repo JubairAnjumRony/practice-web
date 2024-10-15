@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .post{
+            background-color: lightblue;
+            padding:8px;
+            margin:4px;
+
+        }
+    </style>
+</head>
+<body>
+    <button onclick ="loadData()">Load Data</button>
+    <button onclick ="loadData2()">Load Data2</button>
+    <!-- <button onclick ="loadUsers()">UsersData</button> -->
+    <button  onclick ="loadUsers()">UsersData 2</button>
+    <button onclick ="loadpost2()">LoadPost</button>
+    <button onclick ="createApost()">createApost</button>
+    <button onclick ="patchApost()">patchApost</button>
+    <button onclick ="deleteApost()">deleteApost</button>
+    <button onclick ="updateApost()">updateApost</button>
+   
+    <div class ='users-container'>
+        <ol id ="users-list">
+
+        </ol>
+        <main>
+            <section>
+                <h3>All Posts are here</h3>
+                <div id ="posts-container">
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src ="./fetch.js"></script>
+    <script src ="./app.js"></script>
+    <script src ="./post.js"></script>
+</body>
+</html>

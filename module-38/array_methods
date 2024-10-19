@@ -1,0 +1,41 @@
+const products = [
+      {
+         instrument: 'laptop',
+         model:'lenove',
+         price:35000,
+         warranty: '3 year',
+      },
+      {
+         instrument: 'phone',
+         model:'samsung',
+         price:15000,
+         warranty:', 2year',
+      },
+      {
+         instrument: 'keyboard',
+         model:'xingmeng',
+         price:5000,
+         warranty:', 1year',
+      },
+
+
+]
+
+// map method
+const map =products.map(p=>p.model);
+console.log(map);
+console.log(products.map(p=>p.instrument));
+
+// Foreach method difference between forEach and map method is map returns an array but forEach doesnot return anything
+
+products.forEach(p=>console.log(p.price));
+
+products.forEach(p=>console.log(p));
+
+
+// filter and find method
+const cheapest =  products.filter(p=>p.price<=20000);
+// console.log(cheapest);
+
+const find =products.find(p=>p.instrument.includes('phone'));
+console.log(find);
